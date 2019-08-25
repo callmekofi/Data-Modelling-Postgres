@@ -1,5 +1,5 @@
 INTRODUCTION:
-The goal of this project is to create a database using PostgreSql to analise songs and user activity data collected by Sparkify. This makes use of models to design and create tables to optimise queries on datasets made available by Sparkify as log data and song data in JSON formats. At the end of this project, the Sparkify nalysis team is able to retrieve results based on queries on what songs its users are listening to. 
+The goal of this project is to create a database using PostgreSql to analise songs and user activity data collected by Sparkify. This makes use of models to design and create tables to optimise queries on datasets made available by Sparkify as log data and song data in JSON formats. At the end of this project, the Sparkify analysis team is able to retrieve results based on queries on what songs its users are listening to. 
 
 STEPS:
 Files made available to execute this project are: 
