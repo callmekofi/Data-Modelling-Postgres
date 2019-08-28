@@ -14,17 +14,17 @@ IMPORTANT PROCESSES:
 - Test queries on dB.
 
 NOTE:
-ETL pipeline consists of retriving data from files and traansforming them into tables in a dB. This process starts by extracting files using python file-handling methods and pandas to read the individual files. Functions are created to iterate over the individual files in the dir and extract information from the files. The files are processed based on content and inserted into the indvidual tables created using sql_queries and create_table python scripts respectively.
+ETL pipeline consists of retrieving data from files and transforming them into tables in a dB. This process starts by extracting files using python file-handling methods and pandas to read the individual files. Functions are created to iterate over the individual files in the dir and extract information from the files. The files are processed based on content and inserted into the individual tables created using sql_queries and create_table python scripts, respectively.
 
 TABLES CREATED:
 - Facts: Songplays = Made up of songplay events for the datasets given to inform business decision.
 - Dim: users = Made up of users registered to the Sparkify app.
        songs = Made up of all available songs in the Sparkify music dB
-     artists = Made up of all artists of the songs in the Sparkify misuc dB
+     artists = Made up of all artists of the songs in the Sparkify music dB
         time = Made up of the timestamps of song plays by users of the Sparkify app.
         
 NOTE:
-We avoid deuplication in the  songplays "FACT" table by creating "DIM" tables. As evident in the lod data files, there are several instances where data duplication occurs, as such we achieve 2NF in songs and artist tables which are JOINED based on selected fields in the "song_select" query used to insert values in songplays.
+We avoid duplication in the  songplays "FACT" table by creating "DIM" tables. As evident in the lod data files, there are several instances where data duplication occurs, as such we achieve 2NF in songs and artist tables which are JOINED based on selected fields in the "song_select" query used to insert values in songplays.
         
 QUERIES:
 All select, join, aggregation and known available postgres queries can be applied on the dB.
