@@ -21,7 +21,7 @@ def create_database():
     
     return cur, conn
 
-
+#function for dropping and creating table
 def drop_tables(cur, conn):
     for query in drop_table_queries:
         cur.execute(query)
